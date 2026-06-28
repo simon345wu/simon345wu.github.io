@@ -1,4 +1,4 @@
-baseURL = 'https://localhost:1313/'
+baseURL = 'https://simon345wu.github.io/'
 languageCode = 'zh-tw'
 title = '我的個人部落格'
 theme = 'FixIt'
