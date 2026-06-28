@@ -31,12 +31,12 @@ jobs:
           submodules: recursive
 
       - name: Install Dart Sass
-        run: sudo snap install sass
+        run: sudo snap install dart-sass # 修正這裡：正確名稱是 dart-sass
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.161.0' # 這裡強制指定版本，不使用 'latest'
+          hugo-version: '0.161.0'
           extended: true
 
       - name: Setup Pages
