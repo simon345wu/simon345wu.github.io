@@ -1,5 +1,9 @@
 name: Deploy Hugo site to Pages
 
+uses: peaceiris/actions-hugo@v3
+with:
+    hugo-version: '0.161.0' # Or set to 'latest'
+    extended: true
 on:
   push:
     branches:
