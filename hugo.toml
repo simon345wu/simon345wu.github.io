@@ -3,6 +3,9 @@ languageCode = 'zh-tw'
 title = 'Simon Wu的個人部落格'
 theme = 'FixIt'
 
+# 靜音 FixIt v1.0.0 開發版的提醒（我們刻意使用 v1.0.0）
+ignoreLogs = ['warning-v1-dev']
+
 [menus]
   [[menus.main]]
     identifier = "posts"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flutter - 標籤 - Simon Wu的個人部落格</title>
+    <link>http://localhost:1313/tags/flutter/</link>
+    <description>Simon Wu的個人部落格</description>
+    <generator>Hugo 0.163.3 &amp; FixIt v1.0.0-mqwhji8o</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 28 Jun 2026 09:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/flutter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⚙️ 咖啡粉粒徑分析工具</title>
+      <link>http://localhost:1313/projects/coffee-partical-analyser/</link>
+      <pubDate>Sun, 28 Jun 2026 09:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/projects/coffee-partical-analyser/</guid>
+      <category domain="http://localhost:1313/categories/mobile-app/">Mobile APP</category>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案連結&lt;/strong&gt;：&lt;a href=&#34;https://hosthttps://github.com/simon345wu/particle-analyzer.git&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Github simon345wu&lt;i class=&#34;fa-solid fa-external-link-alt fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案簡介&lt;/strong&gt;：本專案是一個基於 Python 與 OpenCV 的咖啡粉粒徑分析軟體。透過數位影像處理技術，能自動偵測照片中的每一顆咖啡粉顆粒，計算其等效圓直徑（Equivalent Circular Diameter）與圓形度，並輸出詳細的粒徑分佈圖表與統計數據。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;本工具非常適合用於評估磨豆機的研磨均勻度、分析不同刻度下的粒徑分佈（包含數量分佈與體積分佈，如 D10/D50/D90、Dv10/Dv50/Dv90），協助咖啡愛好者與專業人士優化萃取參數。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
