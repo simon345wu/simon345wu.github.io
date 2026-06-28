@@ -18,3 +18,6 @@ layout: "links"
 - [個人 UI/UX 設計作品集](https://behance.net)
   - description: "在 Figma 上設計的行動裝置 App 介面，專注於使用者經驗優化與現代簡約風格的視覺傳達。"
   - avatar: "https://unsplash.com"
+- Firebase app hosting
+	- 使用爬蟲程序，定期。抓取。生豆供應商的資料並加以比對歸一，
+	- https://taiwanbeans--taiwangreenbeans.asia-east1.hosted.app/
