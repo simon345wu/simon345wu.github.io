@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "my-first-post"
             }
+          },
+          {
+            "id": "4b5ad7a8411603cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/second-post.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "second-post"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/my-first-post.md",
+                "file": "posts/second-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "my-first-post 的反向連結"
+              "title": "second-post 的反向連結"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/my-first-post.md",
+                "file": "posts/second-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "my-first-post 的對外連結"
+              "title": "second-post 的對外連結"
             }
           },
           {
@@ -156,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/my-first-post.md",
+                "file": "posts/second-post.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "my-first-post 的大綱"
+              "title": "second-post 的大綱"
             }
           }
         ]
@@ -183,9 +198,11 @@
       "bases:建立新的 base": false
     }
   },
-  "active": "8cfa18b673cdbe22",
+  "active": "4b5ad7a8411603cf",
   "lastOpenFiles": [
     "posts/my-first-post.md",
+    "posts/second-post.md",
+    "未命名",
     "projects",
     "posts"
   ]
