@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/Daily-Diary.md",
+                "file": "content/projects/coffee-partical-analyser.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily-Diary"
+              "title": "coffee-partical-analyser"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 384.5
   },
   "right": {
     "id": "5c90b9377e305eb9",
@@ -177,7 +177,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 591.5
+    "width": 205.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,14 +192,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ac8cd49ebd566ad",
+  "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "public/template/Daily-Diary.md",
+    "content/daily/2026-07-10.md",
+    "2026-07-10 1.md",
+    "2026-07-10.md",
+    "content/daily/2026-06-30.md",
     "template/Daily-Diary.md",
+    "public/template/Daily-Diary.md",
     "template",
     "public/template/hugo-post.md",
-    "content/daily/2026-07-10.md",
-    "2026-07-10.md",
     "public/categories/生活隨筆/index.xml",
     "public/tags/日誌/index.xml",
     "public/tags/日誌/page/1/index.html",
@@ -211,7 +213,6 @@
     "public/categories/生活隨筆/page/1",
     "Daily 索引.md",
     "content/daily/2026-07-01.md",
-    "content/daily/2026-06-30.md",
     "content/daily/_index.md",
     "content/posts/test-obsidian-git-push.md",
     "content/posts/second-post.md",
