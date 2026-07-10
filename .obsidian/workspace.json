@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8913f9c6ae84a834",
+        "id": "ef0a1995a19f9100",
         "type": "tabs",
         "children": [
           {
-            "id": "bf60b03ad4b18a5c",
+            "id": "833100806680f1d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/template/Daily-Diary.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新分頁"
+              "title": "Daily-Diary"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "5c90b9377e305eb9",
@@ -157,13 +161,23 @@
               "icon": "lucide-list",
               "title": "大綱"
             }
+          },
+          {
+            "id": "7ec53a063d8aa254",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 731.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,13 +187,39 @@
       "daily-notes:開啟今天的每日筆記": false,
       "templates:插入模板": false,
       "command-palette:開啟命令面板": false,
-      "bases:建立新的 base": false
+      "bases:建立新的 base": false,
+      "publish:發佈變動內容": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bf60b03ad4b18a5c",
+  "active": "9ac8cd49ebd566ad",
   "lastOpenFiles": [
-    "未命名 1.base",
-    "未命名.canvas",
-    "未命名.base"
+    "public/template/Daily-Diary.md",
+    "public/template/hugo-post.md",
+    "content/daily/2026-07-10.md",
+    "2026-07-10.md",
+    "content/template/Daily-Diary.md",
+    "public/categories/生活隨筆/index.xml",
+    "public/tags/日誌/index.xml",
+    "public/tags/日誌/page/1/index.html",
+    "public/tags/日誌/page/1",
+    "public/tags/日誌/page",
+    "public/tags/日誌/index.html",
+    "public/tags/日誌",
+    "public/categories/生活隨筆/page/1/index.html",
+    "public/categories/生活隨筆/page/1",
+    "public/categories/生活隨筆/page",
+    "Daily 索引.md",
+    "content/daily/2026-07-01.md",
+    "content/daily/2026-06-30.md",
+    "content/daily/_index.md",
+    "content/posts/test-obsidian-git-push.md",
+    "content/posts/second-post.md",
+    "content/posts/my-first-post.md",
+    "content/projects/coffee-bean-crawler.md",
+    "content/projects/_index.md",
+    "public/daily/_index.md",
+    "content/posts/20260630-post.md",
+    "未命名.canvas"
   ]
 }

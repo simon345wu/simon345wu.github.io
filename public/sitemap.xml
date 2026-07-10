@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/projects/taiwan-gold-price-monitor/</loc>
-    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/daily/2026-07-10/</loc>
+    <lastmod>2026-07-10T14:00:00+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-07-10T14:00:00+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/daily/</loc>
+    <lastmod>2026-07-10T14:00:00+08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/daily/2026-07-01/</loc>
+    <lastmod>2026-07-01T14:00:00+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/taiwan-gold-price-monitor/</loc>
+    <lastmod>2026-07-01T00:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/daily/2026-06-30/</loc>
+    <lastmod>2026-06-30T14:00:00+08:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/posts/20260630-post/</loc>
@@ -109,16 +125,7 @@
     <lastmod>2026-06-28T07:00:00+08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/daily/2026-06-30/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/daily/2026-07-01/</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/template/daily-diary/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/daily/</loc>
   </url>
   <url>
     <loc>http://localhost:1313/template/</loc>

@@ -4,16 +4,16 @@
     <title>我的專案與作品集 - Simon Wu的個人部落格</title>
     <link>http://localhost:1313/projects/</link>
     <description>Simon Wu的個人部落格</description>
-    <generator>Hugo 0.163.3 &amp; FixIt v1.0.0-mqwhji8o</generator>
+    <generator>Hugo 0.164.0 &amp; FixIt v1.0.0-mqwhji8o</generator>
     <language>zh-tw</language>
     <lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title># 臺灣銀行黃金存摺價格監控服務</title>
+      <title>臺灣銀行黃金存摺價格監控服務</title>
       <link>http://localhost:1313/projects/taiwan-gold-price-monitor/</link>
       <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/taiwan-gold-price-monitor/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;專案連結&lt;/strong&gt;：&lt;a href=&#34;https://taiwanbeans--taiwangreenbeans.asia-east1.hosted.app/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Firebase App Hosting&lt;i class=&#34;fa-solid fa-external-link-alt fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Github 專案&lt;/strong&gt;: &lt;a href=&#34;https://github.com/simon345wu/taiwangold-monitor&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;專案連結&lt;i class=&#34;fa-solid fa-external-link-alt fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案簡介&lt;/strong&gt;：這是一個基於 Python 與 Playwright 實作的&lt;strong&gt;臺灣銀行黃金存摺價格監控服務&lt;/strong&gt;。它能定期爬取台銀黃金存摺牌價，比對多位使用者的自訂目標價格，並在金價達到閾值時，自動發送電子郵件通知。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;##本專案專為&lt;strong&gt;多使用者共享&lt;/strong&gt;與&lt;strong&gt;零伺服器成本託管 (GitHub Actions)&lt;/strong&gt; 設計。&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;專案連結&lt;/strong&gt;：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Github 專案&lt;/strong&gt;: &lt;a href=&#34;https://github.com/simon345wu/taiwangold-monitor&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;專案連結&lt;i class=&#34;fa-solid fa-external-link-alt fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案簡介&lt;/strong&gt;：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;這是一個基於 Python 與 Playwright 實作的&lt;strong&gt;臺灣銀行黃金存摺價格監控服務&lt;/strong&gt;。它能定期爬取台銀黃金存摺牌價，比對多位使用者的自訂目標價格，並在金價達到閾值時，自動發送電子郵件通知。&lt;/li&gt;&#xA;&lt;li&gt;本專案專為&lt;strong&gt;多使用者共享&lt;/strong&gt;與&lt;strong&gt;零伺服器成本託管 (GitHub Actions)&lt;/strong&gt; 設計。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>🛒 RoastWise </title>

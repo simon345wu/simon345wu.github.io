@@ -17,3 +17,8 @@ ignoreLogs = ['warning-v1-dev']
     name = "作品集"
     url = "/projects/"
     weight = 2
+  [[menus.main]]
+    identifier = "daily"
+    name = "日誌"
+    url = "/daily/"
+    weight = 3

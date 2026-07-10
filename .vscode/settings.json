@@ -1,0 +1,27 @@
+{
+    "obsidian-md-vsc.defaultVaultPath": "C:\\githubpage\\my-blog",
+    "obsidian-md-vsc.defaultVault": "myblog",
+
+    // 2. 完美的雙鏈跳轉設定（WikiLinks）
+  "obsidian.linkCompletionStyle": "shortest", // 簡短路徑模式，符合 Obsidian 預設
+  "obsidian.wikiLinkHashes": true,             // 支援連結到筆記內特定標題（#Header）
+
+  // 3. 解決 Hugo 圖片路徑大坑（最重要！）
+  // 在 Obsidian 中拖入圖片時，外掛會自動依照 Hugo 的標準存放至 static/images
+  "obsidian.attachments.path": "static/images", 
+
+  // 當您在 VS Code 使用 WikiLink 語法插入圖片時，
+  // 網址路徑是否要從 static/ 開始算（建议设为 false，因為 Hugo 渲染時會自動忽略 static）
+  "obsidian.attachments.useFullVaultPath": false,
+
+  // 4. 前置宣告格式（Front Matter）
+  "obsidian.frontmatter.format": "yaml", // FixIt 主題預設使用 YAML 或 TOML，這裡設為 YAML 方便相容
+
+  // 5. 額外優化：忽略不需要建立索引的程式碼資料夾
+  "obsidian.excludeFolders": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/public/**",    // Hugo 編譯出來的靜態網頁資料夾
+    "**/themes/**"     // FixIt 主題資料夾（避免外掛去抓主題內建的 Markdown 文件）
+  ]
+}
