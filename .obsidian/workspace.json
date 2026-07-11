@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/coffee-partical-analyser.md",
+                "file": "content/daily/2026-07-11.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "coffee-partical-analyser"
+              "title": "2026-07-11"
             }
           }
         ]
@@ -194,6 +194,8 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
+    "content/projects/coffee-partical-analyser.md",
+    "content/daily/2026-07-11.md",
     "content/daily/2026-07-10.md",
     "2026-07-10 1.md",
     "2026-07-10.md",
