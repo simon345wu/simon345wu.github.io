@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#咖啡生豆的購買",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -193,11 +193,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b198e433b58daea0",
+  "active": "833100806680f1d5",
   "lastOpenFiles": [
     "content/daily/2026-07-13.md",
-    "content/posts/個人咖啡烘培流程.md",
     "content/daily/2026-07-12.md",
+    "content/posts/個人咖啡烘培流程.md",
     "content/daily/2026-07-11.md",
     "content/projects/coffee-partical-analyser.md",
     "content/daily/2026-07-10.md",
