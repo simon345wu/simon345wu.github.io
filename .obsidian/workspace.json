@@ -74,8 +74,7 @@
               "title": "書籤"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,9 +194,11 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
+    "content/posts/my-first-post.md",
+    "content/posts/個人咖啡烘培流程.md",
+    "content/posts/20260630-post.md",
     "content/daily/2026-07-13.md",
     "content/daily/2026-07-12.md",
-    "content/posts/個人咖啡烘培流程.md",
     "content/daily/2026-07-11.md",
     "content/projects/coffee-partical-analyser.md",
     "content/daily/2026-07-10.md",
@@ -222,11 +223,9 @@
     "content/daily/_index.md",
     "content/posts/test-obsidian-git-push.md",
     "content/posts/second-post.md",
-    "content/posts/my-first-post.md",
     "content/projects/coffee-bean-crawler.md",
     "content/projects/_index.md",
     "public/daily/_index.md",
-    "content/posts/20260630-post.md",
     "未命名.canvas"
   ]
 }
