@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tags on Simon Wu的個人部落格</title>
-		<link>https://simon345wu.github.io/tags/</link>
+		<link>http://localhost:1313/tags/</link>
 		<description>Recent content in Tags on Simon Wu的個人部落格</description>
 		<generator>Hugo</generator>
 		<language>zh-tw</language>
@@ -12,82 +12,82 @@
 		
 			<lastBuildDate>Mon, 13 Jul 2026 04:21:05 +0800</lastBuildDate>
 		
-			<atom:link href="https://simon345wu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>日誌</title>
-				<link>https://simon345wu.github.io/tags/%E6%97%A5%E8%AA%8C/</link>
+				<link>http://localhost:1313/tags/%E6%97%A5%E8%AA%8C/</link>
 				<pubDate>Mon, 13 Jul 2026 04:21:05 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/%E6%97%A5%E8%AA%8C/</guid>
+				<guid>http://localhost:1313/tags/%E6%97%A5%E8%AA%8C/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Node.js</title>
-				<link>https://simon345wu.github.io/tags/node.js/</link>
+				<link>http://localhost:1313/tags/node.js/</link>
 				<pubDate>Sun, 28 Jun 2026 10:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/node.js/</guid>
+				<guid>http://localhost:1313/tags/node.js/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>React</title>
-				<link>https://simon345wu.github.io/tags/react/</link>
+				<link>http://localhost:1313/tags/react/</link>
 				<pubDate>Sun, 28 Jun 2026 10:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/react/</guid>
+				<guid>http://localhost:1313/tags/react/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Stripe</title>
-				<link>https://simon345wu.github.io/tags/stripe/</link>
+				<link>http://localhost:1313/tags/stripe/</link>
 				<pubDate>Sun, 28 Jun 2026 10:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/stripe/</guid>
+				<guid>http://localhost:1313/tags/stripe/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Flutter</title>
-				<link>https://simon345wu.github.io/tags/flutter/</link>
+				<link>http://localhost:1313/tags/flutter/</link>
 				<pubDate>Sun, 28 Jun 2026 09:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/flutter/</guid>
+				<guid>http://localhost:1313/tags/flutter/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>OpenCV</title>
-				<link>https://simon345wu.github.io/tags/opencv/</link>
+				<link>http://localhost:1313/tags/opencv/</link>
 				<pubDate>Sun, 28 Jun 2026 09:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/opencv/</guid>
+				<guid>http://localhost:1313/tags/opencv/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Python</title>
-				<link>https://simon345wu.github.io/tags/python/</link>
+				<link>http://localhost:1313/tags/python/</link>
 				<pubDate>Sun, 28 Jun 2026 09:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/python/</guid>
+				<guid>http://localhost:1313/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>爬蟲</title>
-				<link>https://simon345wu.github.io/tags/%E7%88%AC%E8%9F%B2/</link>
+				<link>http://localhost:1313/tags/%E7%88%AC%E8%9F%B2/</link>
 				<pubDate>Sun, 28 Jun 2026 08:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/%E7%88%AC%E8%9F%B2/</guid>
+				<guid>http://localhost:1313/tags/%E7%88%AC%E8%9F%B2/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>資料處理</title>
-				<link>https://simon345wu.github.io/tags/%E8%B3%87%E6%96%99%E8%99%95%E7%90%86/</link>
+				<link>http://localhost:1313/tags/%E8%B3%87%E6%96%99%E8%99%95%E7%90%86/</link>
 				<pubDate>Sun, 28 Jun 2026 08:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/%E8%B3%87%E6%96%99%E8%99%95%E7%90%86/</guid>
+				<guid>http://localhost:1313/tags/%E8%B3%87%E6%96%99%E8%99%95%E7%90%86/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>C&#43;&#43;17 </title>
-				<link>https://simon345wu.github.io/tags/c&#43;&#43;17-/</link>
+				<link>http://localhost:1313/tags/c&#43;&#43;17-/</link>
 				<pubDate>Sun, 28 Jun 2026 07:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/c&#43;&#43;17-/</guid>
+				<guid>http://localhost:1313/tags/c&#43;&#43;17-/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DirectX 11 </title>
-				<link>https://simon345wu.github.io/tags/directx-11-/</link>
+				<link>http://localhost:1313/tags/directx-11-/</link>
 				<pubDate>Sun, 28 Jun 2026 07:00:00 +0800</pubDate>
-				<guid>https://simon345wu.github.io/tags/directx-11-/</guid>
+				<guid>http://localhost:1313/tags/directx-11-/</guid>
 				<description></description>
 			</item>
 	</channel>

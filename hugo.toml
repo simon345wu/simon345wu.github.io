@@ -1,5 +1,6 @@
 baseURL = 'https://simon345wu.github.io/'
 languageCode = 'zh-tw'
+timeZone = 'Asia/Taipei'
 title = 'Simon Wu的個人部落格'
 theme = 'FixIt'
 

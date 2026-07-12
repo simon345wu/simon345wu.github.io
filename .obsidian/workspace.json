@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/test1.md",
+                "file": "content/posts/mycoffeeroastprocess.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test1"
+              "title": "mycoffeeroastprocess"
             }
           }
         ]
@@ -194,25 +194,31 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "public/posts/index.xml",
-    "public/posts/index.html",
-    "public/posts",
-    "public/tags/資料處理/page/1/index.html",
-    "public/tags/爬蟲/page/1/index.html",
-    "public/tags/日誌/page/1/index.html",
-    "public/tags/stripe/page/1/index.html",
-    "public/tags/react/page/1/index.html",
-    "public/tags/python/page/1/index.html",
-    "public/tags/opencv/page/1/index.html",
-    "public/tags/node.js/page/1/index.html",
+    "public/posts/mycoffeeroastprocess/index.html",
+    "public/posts/mycoffeeroastprocess",
+    "public/js/config/89da34886b1a97a708ee3cec806b42c8.js",
+    "public/posts/未命名-1/index.html",
+    "public/posts/未命名-1",
+    "public/js/config/088c44ead10c4fd89123a74ae3fe58fe.js",
+    "content/daily/2026-07-13.md",
+    "content/posts/mycoffeeroastprocess.md",
+    "template/Daily-Diary.md",
+    "template/Post.md",
+    "content/posts/未命名.md",
+    "content/posts/Test1.md",
+    "content/posts/myroastprocess.md",
+    "public/posts/myroastprocess/index.html",
+    "public/posts/myroastprocess",
+    "public/js/config/24c29e78a4e6c95c7d3f325d78a85dbd.js",
+    "public/posts/未命名/index.html",
+    "public/posts/未命名",
+    "content/posts/_index.md",
+    "content/posts/test1.md",
     "public/images/loading.min.svg",
     "public/images/fixit.min.svg",
-    "content/posts/_index.md",
     "content/projects/_index.md",
-    "content/posts/test1.md",
     "content/posts/RoastProcess.md",
     "content/daily/_index.md",
-    "content/daily/2026-07-13.md",
     "content/daily/2026-07-12.md",
     "content/daily/2026-07-11.md",
     "content/daily/2026-07-01.md",
@@ -226,12 +232,6 @@
     "content/daily/2026-07-10.md",
     "2026-07-10 1.md",
     "2026-07-10.md",
-    "template/Daily-Diary.md",
-    "public/template/Daily-Diary.md",
-    "public/template/hugo-post.md",
-    "Daily 索引.md",
-    "content/projects/coffee-bean-crawler.md",
-    "public/daily/_index.md",
     "未命名.canvas"
   ]
 }
