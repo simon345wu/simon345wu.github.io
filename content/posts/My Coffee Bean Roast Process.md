@@ -1,3 +1,8 @@
++++
+title = "My Coffee Bean Roast Process"
+date = 2026-07-13
+draft = false
++++
 
 - [ ] 購買咖啡生豆
 	-我通常購買的來源。從網路的生豆商購買。針對這些生豆商我已經建立可定期更新查詢的資料庫。
