@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/daily/2026-07-11.md",
+                "file": "content/posts/個人咖啡烘培流程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-11"
+              "title": "個人咖啡烘培流程"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#咖啡生豆的購買",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "書籤"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -192,10 +193,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "833100806680f1d5",
+  "active": "b198e433b58daea0",
   "lastOpenFiles": [
-    "content/projects/coffee-partical-analyser.md",
+    "content/daily/2026-07-13.md",
+    "content/posts/個人咖啡烘培流程.md",
+    "content/daily/2026-07-12.md",
     "content/daily/2026-07-11.md",
+    "content/projects/coffee-partical-analyser.md",
     "content/daily/2026-07-10.md",
     "2026-07-10 1.md",
     "2026-07-10.md",
