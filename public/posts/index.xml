@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>所有文章 - Simon Wu的個人部落格</title>
+    <title>我的文章 - Simon Wu的個人部落格</title>
     <link>http://localhost:1313/posts/</link>
     <description>Simon Wu的個人部落格</description>
     <generator>Hugo 0.164.0 &amp; FixIt v1.0.0-mqwhji8o</generator>
