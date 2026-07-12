@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/daily/2026-07-11.md",
+                "file": "content/posts/test-obsidian-git-push.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-11"
+              "title": "test-obsidian-git-push"
             }
           }
         ]
@@ -194,14 +194,22 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "public/css/unocss.min.css",
+    "content/posts/My Coffee Bean Roast Process.md",
+    "public/js/config/3fb5e18e97f8d8d14b8dae801a1b60ac.js",
+    "public/js/config/7a49a714d73a170305d9d7bf3216162b.js",
+    "public/js/config/6ef08147abd11ec83bd73d7483c70b10.js",
+    "content/daily/2026-07-11.md",
+    "public/js/config/583bc6c089052d23ac6c3a855c17f6df.min.js",
+    "public/js/config/bb3499da6e4e327235821302bd6dee75.min.js",
+    "public/js/config/dc94e0c51c4569b62092c64a51bb00c3.min.js",
+    "public/js/config/65153c3dc557a5189a6671471a9b9899.min.js",
+    "resources/_gen/assets/scss/posts.scss_2702cf771fd9bd86f08c65a72683e9b2.content",
+    "resources/_gen/assets/scss/posts.scss_2702cf771fd9bd86f08c65a72683e9b2.json",
+    "public/css/posts.min.css",
     "content/posts/my-first-post.md",
-    "content/posts/My Coffee Bean Roast Process.md",
-    "content/posts/My Coffee Bean Roast Process.md",
     "content/posts/20260630-post.md",
     "content/daily/2026-07-13.md",
     "content/daily/2026-07-12.md",
-    "content/daily/2026-07-11.md",
     "content/projects/coffee-partical-analyser.md",
     "content/daily/2026-07-10.md",
     "2026-07-10 1.md",
@@ -209,17 +217,7 @@
     "content/daily/2026-06-30.md",
     "template/Daily-Diary.md",
     "public/template/Daily-Diary.md",
-    "template",
     "public/template/hugo-post.md",
-    "public/categories/生活隨筆/index.xml",
-    "public/tags/日誌/index.xml",
-    "public/tags/日誌/page/1/index.html",
-    "public/tags/日誌/page/1",
-    "public/tags/日誌/page",
-    "public/tags/日誌/index.html",
-    "public/tags/日誌",
-    "public/categories/生活隨筆/page/1/index.html",
-    "public/categories/生活隨筆/page/1",
     "Daily 索引.md",
     "content/daily/2026-07-01.md",
     "content/daily/_index.md",
