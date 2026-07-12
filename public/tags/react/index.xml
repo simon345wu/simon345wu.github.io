@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React - 標籤 - Simon Wu的個人部落格</title>
-    <link>http://localhost:1313/tags/react/</link>
+    <link>https://simon345wu.github.io/tags/react/</link>
     <description>Simon Wu的個人部落格</description>
     <generator>Hugo 0.164.0 &amp; FixIt v1.0.0-mqwhji8o</generator>
     <language>zh-tw</language>
     <lastBuildDate>Sun, 28 Jun 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://simon345wu.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🛒 RoastWise </title>
-      <link>http://localhost:1313/projects/roastwise/</link>
+      <link>https://simon345wu.github.io/projects/roastwise/</link>
       <pubDate>Sun, 28 Jun 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/projects/roastwise/</guid>
-      <category domain="http://localhost:1313/categories/%E7%B6%B2%E9%A0%81%E8%88%87%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/">網頁與軟體開發</category>
+      <guid>https://simon345wu.github.io/projects/roastwise/</guid>
+      <category domain="https://simon345wu.github.io/categories/%E7%B6%B2%E9%A0%81%E8%88%87%E8%BB%9F%E9%AB%94%E9%96%8B%E7%99%BC/">網頁與軟體開發</category>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案連結&lt;/strong&gt;：&lt;a href=&#34;https://studio--studio-1271829643-cbf95.us-central1.hosted.app/&#34; target=&#34;_blank&#34; rel=&#34;external nofollow noopener noreferrer&#34;&gt;Firebase App Hosting&lt;i class=&#34;fa-solid fa-external-link-alt fa-xs ms-1 text-secondary&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案簡介&lt;/strong&gt;：使用 Next.js + Node.js + Firebase 開發的。RoastWise 是一個專為精品咖啡烘豆師和烘豆廠設計的現代化網頁應用程式。它利用 AI 技術和強大的數據管理功能，幫助您追蹤庫存、完善烘豆曲線、並與客戶分享您的傑作。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
