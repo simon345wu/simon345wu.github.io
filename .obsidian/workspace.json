@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Coffee Bean Roast Process.md",
+                "file": "content/posts/My Coffee Bean Roast Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Coffee Bean Roast Process"
+              "title": "My Coffee Bean Roast Process"
             }
           }
         ]
@@ -195,7 +195,8 @@
   "active": "833100806680f1d5",
   "lastOpenFiles": [
     "content/posts/my-first-post.md",
-    "content/posts/Coffee Bean Roast Process.md",
+    "content/posts/My Coffee Bean Roast Process.md",
+    "content/posts/My Coffee Bean Roast Process.md",
     "content/posts/20260630-post.md",
     "content/daily/2026-07-13.md",
     "content/daily/2026-07-12.md",
