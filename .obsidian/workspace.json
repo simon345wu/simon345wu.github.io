@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/My Coffee Bean Roast Process.md",
+                "file": "content/posts/我的咖啡烘培過程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "My Coffee Bean Roast Process"
+              "title": "我的咖啡烘培過程"
             }
           }
         ]
@@ -194,11 +194,19 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "content/posts/my-first-post.md",
-    "content/posts/second-post.md",
-    "content/posts/test-obsidian-git-push.md",
-    "content/posts/My Coffee Bean Roast Process.md",
+    "public/posts/我的咖啡烘培過程/index.html",
+    "public/posts/我的咖啡烘培過程",
+    "public/js/config/6b00a8e1edb76bbb46f0d29dba7fc4d6.js",
     "content/posts/20260630-post.md",
+    "content/posts/我的咖啡烘培過程.md",
+    "content/posts/test-obsidian-git-push.md",
+    "content/posts/second-post.md",
+    "content/posts/RoastProcess.md",
+    "content/posts/my-first-post.md",
+    "public/posts/roastprocess/index.html",
+    "public/posts/roastprocess",
+    "public/js/config/aa610d54807199cc8df334eb64cc53fc.js",
+    "content/posts/CoffeeBeanRoastProcess.md",
     "content/posts/_index.md",
     "content/projects/_index.md",
     "public/js/config/a74dbcb35ee06db2c5314e7ff0d9268f.js",
@@ -206,12 +214,7 @@
     "public/posts/未命名",
     "public/js/config/7bf925baf894bce8c44a3efd2a6df1f4.js",
     "public/js/config/3fb5e18e97f8d8d14b8dae801a1b60ac.js",
-    "public/js/config/7a49a714d73a170305d9d7bf3216162b.js",
-    "public/js/config/6ef08147abd11ec83bd73d7483c70b10.js",
     "content/daily/2026-07-11.md",
-    "public/js/config/583bc6c089052d23ac6c3a855c17f6df.min.js",
-    "public/js/config/bb3499da6e4e327235821302bd6dee75.min.js",
-    "public/js/config/dc94e0c51c4569b62092c64a51bb00c3.min.js",
     "content/daily/2026-07-13.md",
     "content/daily/2026-07-12.md",
     "content/projects/coffee-partical-analyser.md",
