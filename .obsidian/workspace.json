@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/mycoffeeroastprocess.md",
+                "file": "content/daily/2026-07-13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mycoffeeroastprocess"
+              "title": "2026-07-13"
             }
           }
         ]
@@ -194,8 +194,10 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "content/posts/未命名.md",
     "content/posts/mycoffeeroastprocess.md",
+    "notes/coffee-workflow-integration.md",
+    "notes",
+    "content/posts/未命名.md",
     "public/posts/mycoffeeroastprocess/index.html",
     "public/posts/mycoffeeroastprocess",
     "public/js/config/89da34886b1a97a708ee3cec806b42c8.js",
@@ -210,7 +212,6 @@
     "public/posts/myroastprocess/index.html",
     "public/posts/myroastprocess",
     "public/js/config/24c29e78a4e6c95c7d3f325d78a85dbd.js",
-    "public/posts/未命名/index.html",
     "content/posts/_index.md",
     "content/posts/test1.md",
     "public/images/loading.min.svg",
