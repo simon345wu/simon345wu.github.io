@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>我的文章 - Simon Wu的個人部落格</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://simon345wu.github.io/posts/</link>
     <description>Simon Wu的個人部落格</description>
     <generator>Hugo 0.164.0 &amp; FixIt v1.0.0-mqwhji8o</generator>
     <language>zh-tw</language>
     <lastBuildDate>Mon, 13 Jul 2026 07:05:41 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://simon345wu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的咖啡烘焙過程</title>
-      <link>http://localhost:1313/posts/mycoffeeroastprocess/</link>
+      <link>https://simon345wu.github.io/posts/mycoffeeroastprocess/</link>
       <pubDate>Mon, 13 Jul 2026 07:05:41 +0800</pubDate>
-      <guid>http://localhost:1313/posts/mycoffeeroastprocess/</guid>
+      <guid>https://simon345wu.github.io/posts/mycoffeeroastprocess/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 購買咖啡生豆&lt;br&gt;&#xA;          -我通常購買的來源。從網路的生豆商購買。針對這些生豆商我已經建立可定期更新查詢的資料庫。&lt;br&gt;&#xA;          1. 一個爬蟲系統，定期更新生豆資料的資料庫。&lt;br&gt;&#xA;          2. 資料庫建於 Neon Postgresql. &lt;br&gt;&#xA;          3. 查詢系統建於google cloud Firebase App host。Next.js 網站。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 咖啡烘培&lt;br&gt;&#xA;          1.  PC windows 使用 artisan 烘培軟體， 控制 skywalker roaster進行烘培，並存下烘培紀錄(.log)和曲線影像(.jpg)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 烘培紀錄的服務&lt;br&gt;&#xA;1.  使用 roastwise 網站服務 :( firebase app host Next.js 網站)&lt;br&gt;&#xA;          - 建生豆庫存&lt;br&gt;&#xA;           - 建立烘培紀錄 : 上傳 artisan log 和 jpg&lt;br&gt;&#xA;           - 產生可查詢網頁  &lt;br&gt;&#xA;           - 可列印的豆袋標籤(pdf)供下載，標籤上網頁的QR code。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 咖啡標籤的列印&lt;br&gt;&#xA;1.  在pc 使用 pdfmerge python 程式，進行標籤合併，每張標籤為一頁然後acrobat PDF列印的時候設定為合併頁面。 每張A4紙可以列印9張標籤(3X3)。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Test1</title>
-      <link>http://localhost:1313/posts/test1/</link>
+      <link>https://simon345wu.github.io/posts/test1/</link>
       <pubDate>Mon, 13 Jul 2026 06:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test1/</guid>
+      <guid>https://simon345wu.github.io/posts/test1/</guid>
       <description>&lt;p&gt;test1&lt;/p&gt;</description>
     </item>
   </channel>

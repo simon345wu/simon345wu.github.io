@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     <meta name="robots" content="noodp" />
-    <title>🎨 Windows Hardware Performance Monitor - Simon Wu的個人部落格</title><meta name="author" content="">
-<meta name="description" content=" 專案連結：Github Simon345wu) 專案簡介：一個專為 Windows 平台打造的高性能、即時硬體效能監控工具。本專案使用 C&#43;&#43;17 開發，並結合 Dear ImGui 與 ImPlot 打造現代化的 slate-dark 風格操作介面，以極低的系統開銷提供核心級的硬體資訊監控。 "><meta name="keywords" content='C&#43;&#43;17 , DirectX 11 '>
-	<meta itemprop="name" content="🎨 Windows Hardware Performance Monitor">
-	<meta itemprop="description" content="專案連結：Github Simon345wu) 專案簡介：一個專為 Windows 平台打造的高性能、即時硬體效能監控工具。本專案使用 C&#43;&#43;17 開發，並結合 Dear ImGui 與 ImPlot 打造現代化的 slate-dark 風格操作介面，以極低的系統開銷提供核心級的硬體資訊監控。">
+    <title>🎨 Windows Resource Monitor Widget - Simon Wu的個人部落格</title><meta name="author" content="">
+<meta name="description" content=" 專案連結：Github Simon345wu 專案簡介：一個常駐桌面右上角的輕量級 Windows 即時資源監控小工具，目的是讓人一眼看出電腦現在有沒有在工作。使用 C&#43;&#43;17 開發，結合 Dear ImGui、ImPlot 與 DirectX 11，以四條折線圖即時呈現 CPU、記憶體、磁碟讀寫與網路流量。無邊框置頂視窗、支援高 DPI，並透過閒置節流渲染與低成本系統 API 採樣，將自身開銷壓到整機 CPU 不到 0.1%、單一執行檔不到 500 KB。 開發歷程：v1 為多分頁的完整監控介面（逐核 CPU 網格、重疊曲線、記憶體詳情）；v2 重新定位為「掛在桌面角落的小工具」，只保留最能反映系統活動的四項指標，換取更小的體積與更低的資源佔用。 "><meta name="keywords" content='C&#43;&#43;17 , DirectX 11 '>
+	<meta itemprop="name" content="🎨 Windows Resource Monitor Widget">
+	<meta itemprop="description" content="專案連結：Github Simon345wu 專案簡介：一個常駐桌面右上角的輕量級 Windows 即時資源監控小工具，目的是讓人一眼看出電腦現在有沒有在工作。使用 C&#43;&#43;17 開發，結合 Dear ImGui、ImPlot 與 DirectX 11，以四條折線圖即時呈現 CPU、記憶體、磁碟讀寫與網路流量。無邊框置頂視窗、支援高 DPI，並透過閒置節流渲染與低成本系統 API 採樣，將自身開銷壓到整機 CPU 不到 0.1%、單一執行檔不到 500 KB。 開發歷程：v1 為多分頁的完整監控介面（逐核 CPU 網格、重疊曲線、記憶體詳情）；v2 重新定位為「掛在桌面角落的小工具」，只保留最能反映系統活動的四項指標，換取更小的體積與更低的資源佔用。">
 	<meta itemprop="datePublished" content="2026-06-28T07:00:00+08:00">
-	<meta itemprop="dateModified" content="2026-06-28T07:00:00+08:00">
-	<meta itemprop="wordCount" content="14">
-	<meta itemprop="keywords" content="C&#43;&#43;17 ,DirectX 11 "><meta property="og:url" content="http://localhost:1313/projects/hw-monitor/">
+	<meta itemprop="dateModified" content="2026-07-14T00:00:00+08:00">
+	<meta itemprop="wordCount" content="26">
+	<meta itemprop="keywords" content="C&#43;&#43;17 ,DirectX 11 "><meta property="og:url" content="https://simon345wu.github.io/projects/hw-monitor/">
 	<meta property="og:site_name" content="Simon Wu的個人部落格">
-	<meta property="og:title" content="🎨 Windows Hardware Performance Monitor">
-	<meta property="og:description" content="專案連結：Github Simon345wu) 專案簡介：一個專為 Windows 平台打造的高性能、即時硬體效能監控工具。本專案使用 C&#43;&#43;17 開發，並結合 Dear ImGui 與 ImPlot 打造現代化的 slate-dark 風格操作介面，以極低的系統開銷提供核心級的硬體資訊監控。">
+	<meta property="og:title" content="🎨 Windows Resource Monitor Widget">
+	<meta property="og:description" content="專案連結：Github Simon345wu 專案簡介：一個常駐桌面右上角的輕量級 Windows 即時資源監控小工具，目的是讓人一眼看出電腦現在有沒有在工作。使用 C&#43;&#43;17 開發，結合 Dear ImGui、ImPlot 與 DirectX 11，以四條折線圖即時呈現 CPU、記憶體、磁碟讀寫與網路流量。無邊框置頂視窗、支援高 DPI，並透過閒置節流渲染與低成本系統 API 採樣，將自身開銷壓到整機 CPU 不到 0.1%、單一執行檔不到 500 KB。 開發歷程：v1 為多分頁的完整監控介面（逐核 CPU 網格、重疊曲線、記憶體詳情）；v2 重新定位為「掛在桌面角落的小工具」，只保留最能反映系統活動的四項指標，換取更小的體積與更低的資源佔用。">
 	<meta property="og:locale" content="zh_tw">
 	<meta property="og:type" content="article">
 		<meta property="article:section" content="projects">
 		<meta property="article:published_time" content="2026-06-28T07:00:00+08:00">
-		<meta property="article:modified_time" content="2026-06-28T07:00:00+08:00">
+		<meta property="article:modified_time" content="2026-07-14T00:00:00+08:00">
 		<meta property="article:tag" content="C&#43;&#43;17 ">
 		<meta property="article:tag" content="DirectX 11 ">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="🎨 Windows Hardware Performance Monitor">
-  <meta name="twitter:description" content="專案連結：Github Simon345wu) 專案簡介：一個專為 Windows 平台打造的高性能、即時硬體效能監控工具。本專案使用 C&#43;&#43;17 開發，並結合 Dear ImGui 與 ImPlot 打造現代化的 slate-dark 風格操作介面，以極低的系統開銷提供核心級的硬體資訊監控。"><meta name="application-name" content="Simon Wu的個人部落格">
+  <meta name="twitter:title" content="🎨 Windows Resource Monitor Widget">
+  <meta name="twitter:description" content="專案連結：Github Simon345wu 專案簡介：一個常駐桌面右上角的輕量級 Windows 即時資源監控小工具，目的是讓人一眼看出電腦現在有沒有在工作。使用 C&#43;&#43;17 開發，結合 Dear ImGui、ImPlot 與 DirectX 11，以四條折線圖即時呈現 CPU、記憶體、磁碟讀寫與網路流量。無邊框置頂視窗、支援高 DPI，並透過閒置節流渲染與低成本系統 API 採樣，將自身開銷壓到整機 CPU 不到 0.1%、單一執行檔不到 500 KB。 開發歷程：v1 為多分頁的完整監控介面（逐核 CPU 網格、重疊曲線、記憶體詳情）；v2 重新定位為「掛在桌面角落的小工具」，只保留最能反映系統活動的四項指標，換取更小的體積與更低的資源佔用。"><meta name="application-name" content="Simon Wu的個人部落格">
 <meta name="apple-mobile-web-app-title" content="Simon Wu的個人部落格"><meta name="theme-color" data-light="#f6f8fa" data-dark="#151b23" content="#f6f8fa"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/projects/hw-monitor/" title="🎨 Windows Hardware Performance Monitor - Simon Wu的個人部落格" /><link rel="next" type="text/html" href="http://localhost:1313/projects/coffee-bean-crawler/" title="☕ 生豆供應商資料爬蟲系統" /><link rel="stylesheet" href="/css/unocss.css"><link rel="stylesheet" href="/css/main.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://simon345wu.github.io/projects/hw-monitor/" title="🎨 Windows Resource Monitor Widget - Simon Wu的個人部落格" /><link rel="next" type="text/html" href="https://simon345wu.github.io/projects/coffee-bean-crawler/" title="☕ 生豆供應商資料爬蟲系統" /><link rel="stylesheet" href="/css/unocss.min.css"><link rel="stylesheet" href="/css/main.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><link rel="preload" href="/js/main.js" as="script"><script type="application/ld+json">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><link rel="preload" href="/js/main.min.js" as="script"><script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "🎨 Windows Hardware Performance Monitor",
+    "headline": "🎨 Windows Resource Monitor Widget",
     "inLanguage": "zh-tw",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "http:\/\/localhost:1313\/projects\/hw-monitor\/"
-    },"genre": "projects","keywords": "C\u002b\u002b17 , DirectX 11 ","wordcount":  14 ,
-    "url": "http:\/\/localhost:1313\/projects\/hw-monitor\/","datePublished": "2026-06-28T07:00:00+08:00","dateModified": "2026-06-28T07:00:00+08:00","publisher": {
+      "@id": "https:\/\/simon345wu.github.io\/projects\/hw-monitor\/"
+    },"genre": "projects","keywords": "C\u002b\u002b17 , DirectX 11 ","wordcount":  26 ,
+    "url": "https:\/\/simon345wu.github.io\/projects\/hw-monitor\/","datePublished": "2026-06-28T07:00:00+08:00","dateModified": "2026-07-14T00:00:00+08:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
         "@type": "Person",
         "name": "作者"
       },"description": ""
   }
-  </script><script src="/js/head.js"></script></head>
+  </script><script src="/js/head.min.js"></script></head>
   <body data-instant-intensity="viewport" data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper">
     <div class="header-title">
@@ -85,9 +85,10 @@
 </header>
 
 <main class="fi-container"><article class="page single special">
-    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">🎨 Windows Hardware Performance Monitor</h1></div><div class="content" id="content"><ul>
-<li><strong>專案連結</strong>：<a href="https://github.com/simon345wu/win_hardware_monitor" target="_blank" rel="external nofollow noopener noreferrer">Github Simon345wu<i class="fa-solid fa-external-link-alt fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>)</li>
-<li><strong>專案簡介</strong>：一個專為 Windows 平台打造的高性能、即時硬體效能監控工具。本專案使用 C++17 開發，並結合 Dear ImGui 與 ImPlot 打造現代化的 slate-dark 風格操作介面，以極低的系統開銷提供核心級的硬體資訊監控。</li>
+    <div class="header"><h1 class="single-title animate__animated animate__pulse animate__faster">🎨 Windows Resource Monitor Widget</h1></div><div class="content" id="content"><ul>
+<li><strong>專案連結</strong>：<a href="https://github.com/simon345wu/win_hardware_monitor" target="_blank" rel="external nofollow noopener noreferrer">Github Simon345wu<i class="fa-solid fa-external-link-alt fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
+<li><strong>專案簡介</strong>：一個常駐桌面右上角的輕量級 Windows 即時資源監控小工具，目的是讓人一眼看出電腦現在有沒有在工作。使用 C++17 開發，結合 Dear ImGui、ImPlot 與 DirectX 11，以四條折線圖即時呈現 CPU、記憶體、磁碟讀寫與網路流量。無邊框置頂視窗、支援高 DPI，並透過閒置節流渲染與低成本系統 API 採樣，將自身開銷壓到整機 CPU 不到 0.1%、單一執行檔不到 500 KB。</li>
+<li><strong>開發歷程</strong>：v1 為多分頁的完整監控介面（逐核 CPU 網格、重疊曲線、記憶體詳情）；v2 重新定位為「掛在桌面角落的小工具」，只保留最能反映系統活動的四項指標，換取更小的體積與更低的資源佔用。</li>
 </ul>
 </div></article></main><footer class="footer">
     <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.164.0">Hugo</a> 強力驅動 | 主題 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v1.0.0-mqwhji8o">FixIt</a>
@@ -120,5 +121,5 @@
     </dialog><noscript>
     <div class="noscript-warning bg-danger text-white text-base font-bold fixed text-center inset-x-0 bottom-0 w-full z-fixed">該網站在啟用 JavaScript 的情況下效果最佳。</div>
   </noscript>
-</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete-js/index.production.js" defer></script><script src="/js/lib/fuse.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/lib/cookieconsent.js" defer></script><script src="/lib/cell-tooltip/cell-tooltip.umd.js" defer></script><script src="/js/config/6a68f1860d614df4381e9361c26d8384.js" defer></script><script src="/js/lib/file-tree.js" defer></script><script src="/js/main.js" defer></script></body>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete-js/index.production.js" defer></script><script src="/js/lib/fuse.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/lib/cookieconsent.min.js" defer></script><script src="/lib/cell-tooltip/cell-tooltip.umd.js" defer></script><script src="/js/config/6a68f1860d614df4381e9361c26d8384.min.js" defer></script><script src="/js/lib/file-tree.min.js" defer></script><script src="/js/main.min.js" defer></script></body>
 </html>
