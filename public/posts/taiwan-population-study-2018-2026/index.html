@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>用開放資料看臺灣人口結構變化 2018–2026 - Simon Wu的個人部落格</title><meta name="author" content="">
+<meta name="description" content="臺灣的政府資料開放平臺（data.gov.tw）上有五萬三千多個資料集，這是我用它做的第一個完整研究：把內政部戶政司的村里級人口資料，整理成 2018–2026 年各縣市人口總量與各鄉鎮市區年齡層結構的年度觀察。
+👉 完整互動報告在這裡 — 含各縣市增減、六都高齡化曲線，以及可以選縣市、選年度的 368 個鄉鎮市區年齡層探索器。
+資料與方法資料來源：戶政司〈村里戶數、單一年齡人口（新增區域代碼）〉，107 年起每月一檔，村里層級、單一年齡（0–100 歲以上）分男女。 取每年 12 月底時點（2026 年為 6 月底），共 9 個年度時點。 用 Python（requests &#43; pandas）從全國約 7,700 個村里逐級彙整到 368 個鄉鎮市區、22 個縣市，年齡欄位加總成 0–14、15–24、25–44、45–64、65&#43; 五組。 三個主要發現1. 總人口在 2019 年見頂，之後回不去了2019 年底全國 23,603,121 人是歷史高峰。疫情期間（2021–2022）因除籍效應急跌，2023 年短暫回升後恢復下行，2026 年 6 月只剩 23,243,565 人 — 八年少了 34.5 萬人，相當於一個嘉義縣加一個臺東縣。
+"><meta name="keywords" content='開放資料, 人口統計, 資料分析, Python'>
+	<meta itemprop="name" content="用開放資料看臺灣人口結構變化 2018–2026">
+	<meta itemprop="description" content="臺灣的政府資料開放平臺（data.gov.tw）上有五萬三千多個資料集，這是我用它做的第一個完整研究：把內政部戶政司的村里級人口資料，整理成 2018–2026 年各縣市人口總量與各鄉鎮市區年齡層結構的年度觀察。
+👉 完整互動報告在這裡 — 含各縣市增減、六都高齡化曲線，以及可以選縣市、選年度的 368 個鄉鎮市區年齡層探索器。
+資料與方法資料來源：戶政司〈村里戶數、單一年齡人口（新增區域代碼）〉，107 年起每月一檔，村里層級、單一年齡（0–100 歲以上）分男女。 取每年 12 月底時點（2026 年為 6 月底），共 9 個年度時點。 用 Python（requests &#43; pandas）從全國約 7,700 個村里逐級彙整到 368 個鄉鎮市區、22 個縣市，年齡欄位加總成 0–14、15–24、25–44、45–64、65&#43; 五組。 三個主要發現1. 總人口在 2019 年見頂，之後回不去了2019 年底全國 23,603,121 人是歷史高峰。疫情期間（2021–2022）因除籍效應急跌，2023 年短暫回升後恢復下行，2026 年 6 月只剩 23,243,565 人 — 八年少了 34.5 萬人，相當於一個嘉義縣加一個臺東縣。">
+	<meta itemprop="datePublished" content="2026-07-14T09:00:00+08:00">
+	<meta itemprop="dateModified" content="2026-07-14T09:00:00+08:00">
+	<meta itemprop="wordCount" content="127">
+	<meta itemprop="keywords" content="開放資料,人口統計,資料分析,Python"><meta property="og:url" content="https://simon345wu.github.io/posts/taiwan-population-study-2018-2026/">
+	<meta property="og:site_name" content="Simon Wu的個人部落格">
+	<meta property="og:title" content="用開放資料看臺灣人口結構變化 2018–2026">
+	<meta property="og:description" content="臺灣的政府資料開放平臺（data.gov.tw）上有五萬三千多個資料集，這是我用它做的第一個完整研究：把內政部戶政司的村里級人口資料，整理成 2018–2026 年各縣市人口總量與各鄉鎮市區年齡層結構的年度觀察。
+👉 完整互動報告在這裡 — 含各縣市增減、六都高齡化曲線，以及可以選縣市、選年度的 368 個鄉鎮市區年齡層探索器。
+資料與方法資料來源：戶政司〈村里戶數、單一年齡人口（新增區域代碼）〉，107 年起每月一檔，村里層級、單一年齡（0–100 歲以上）分男女。 取每年 12 月底時點（2026 年為 6 月底），共 9 個年度時點。 用 Python（requests &#43; pandas）從全國約 7,700 個村里逐級彙整到 368 個鄉鎮市區、22 個縣市，年齡欄位加總成 0–14、15–24、25–44、45–64、65&#43; 五組。 三個主要發現1. 總人口在 2019 年見頂，之後回不去了2019 年底全國 23,603,121 人是歷史高峰。疫情期間（2021–2022）因除籍效應急跌，2023 年短暫回升後恢復下行，2026 年 6 月只剩 23,243,565 人 — 八年少了 34.5 萬人，相當於一個嘉義縣加一個臺東縣。">
+	<meta property="og:locale" content="zh_tw">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-07-14T09:00:00+08:00">
+		<meta property="article:modified_time" content="2026-07-14T09:00:00+08:00">
+		<meta property="article:tag" content="開放資料">
+		<meta property="article:tag" content="人口統計">
+		<meta property="article:tag" content="資料分析">
+		<meta property="article:tag" content="Python">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="用開放資料看臺灣人口結構變化 2018–2026">
+  <meta name="twitter:description" content="臺灣的政府資料開放平臺（data.gov.tw）上有五萬三千多個資料集，這是我用它做的第一個完整研究：把內政部戶政司的村里級人口資料，整理成 2018–2026 年各縣市人口總量與各鄉鎮市區年齡層結構的年度觀察。
+👉 完整互動報告在這裡 — 含各縣市增減、六都高齡化曲線，以及可以選縣市、選年度的 368 個鄉鎮市區年齡層探索器。
+資料與方法資料來源：戶政司〈村里戶數、單一年齡人口（新增區域代碼）〉，107 年起每月一檔，村里層級、單一年齡（0–100 歲以上）分男女。 取每年 12 月底時點（2026 年為 6 月底），共 9 個年度時點。 用 Python（requests &#43; pandas）從全國約 7,700 個村里逐級彙整到 368 個鄉鎮市區、22 個縣市，年齡欄位加總成 0–14、15–24、25–44、45–64、65&#43; 五組。 三個主要發現1. 總人口在 2019 年見頂，之後回不去了2019 年底全國 23,603,121 人是歷史高峰。疫情期間（2021–2022）因除籍效應急跌，2023 年短暫回升後恢復下行，2026 年 6 月只剩 23,243,565 人 — 八年少了 34.5 萬人，相當於一個嘉義縣加一個臺東縣。"><meta name="application-name" content="Simon Wu的個人部落格">
+<meta name="apple-mobile-web-app-title" content="Simon Wu的個人部落格"><meta name="theme-color" data-light="#f6f8fa" data-dark="#151b23" content="#f6f8fa"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="https://simon345wu.github.io/posts/taiwan-population-study-2018-2026/" title="用開放資料看臺灣人口結構變化 2018–2026 - Simon Wu的個人部落格" /><link rel="prev" type="text/html" href="https://simon345wu.github.io/daily/2026-07-14/" title="日誌：2026-07-14" /><link rel="stylesheet" href="/css/unocss.min.css"><link rel="stylesheet" href="/css/main.min.css"><link rel="stylesheet" href="/css/posts.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><link rel="preload" href="/js/main.min.js" as="script"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "用開放資料看臺灣人口結構變化 2018–2026",
+    "inLanguage": "zh-tw",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/simon345wu.github.io\/posts\/taiwan-population-study-2018-2026\/"
+    },"genre": "posts","keywords": "開放資料, 人口統計, 資料分析, Python","wordcount":  127 ,
+    "url": "https:\/\/simon345wu.github.io\/posts\/taiwan-population-study-2018-2026\/","datePublished": "2026-07-14T09:00:00+08:00","dateModified": "2026-07-14T09:00:00+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "作者"
+      },"description": ""
+  }
+  </script><script src="/js/head.min.js"></script></head>
+  <body data-instant-intensity="viewport" data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="Simon Wu的個人部落格" class="header-title-link"><span class="header-title-text">Simon Wu的個人部落格</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/posts/">文章</a></li><li class="menu-item">
+              <a class="menu-link" href="/projects/">作品集</a></li><li class="menu-item">
+              <a class="menu-link" href="/daily/">日誌</a></li><li class="menu-item delimiter"></li><li class="menu-item search">
+            <button type="button" class="search-trigger desktop" aria-label="搜尋" title="搜尋">
+              <i class="fa-solid fa-search" aria-hidden="true"></i>
+              搜尋
+              <kbd></kbd>
+            </button>
+          </li>
+          <li class="menu-item delimiter"></li><li class="menu-item theme-switch-item">
+          <button type="button" class="theme-switch" aria-label="切換主題" title="切換主題"><i class="fa-solid fa-adjust" aria-hidden="true"></i></button>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="Simon Wu的個人部落格" class="header-title-link"><span class="header-title-text">Simon Wu的個人部落格</span></a><span class="header-subtitle"></span></div><button type="button" class="search-trigger mobile" aria-label="搜尋"><i class="fa-solid fa-search" aria-hidden="true"></i></button><button type="button" class="theme-switch" aria-label="切換主題"><i class="fa-solid fa-adjust" aria-hidden="true"></i></button>
+      <button type="button" class="menu-toggle" id="menu-toggle-mobile" aria-controls="menu-mobile" aria-expanded="false" aria-labelledby="menu-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/posts/">文章</a></li><li class="menu-item"><a class="menu-link" href="/projects/">作品集</a></li><li class="menu-item"><a class="menu-link" href="/daily/">日誌</a></li><li class="menu-item menu-system"></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="fi-container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>用開放資料看臺灣人口結構變化 2018–2026</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Anonymous</span></span><span class="post-included-in">&nbsp;收錄於 <a href="/categories/%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%99%E7%A0%94%E7%A9%B6/" class="post-category" title="分類 - 開放資料研究"><i class="fa-regular fa-folder" aria-hidden="true"></i> 開放資料研究</a></span></div><div class="post-meta-line"><span title="發佈於 2026-07-14 09:00:00"><i class="fa-solid fa-calendar-days me-1" aria-hidden="true"></i><time datetime="2026-07-14">2026-07-14</time></span>&nbsp;<span title="127 字"><i class="fa-solid fa-pencil-alt me-1" aria-hidden="true"></i>約 200 字</span>&nbsp;<span><i class="fa-regular fa-clock me-1" aria-hidden="true"></i>預計閱讀 1 分鐘</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目錄</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#資料與方法">資料與方法</a></li>
+    <li><a href="#三個主要發現">三個主要發現</a>
+      <ul>
+        <li><a href="#1-總人口在-2019-年見頂之後回不去了">1. 總人口在 2019 年見頂，之後回不去了</a></li>
+        <li><a href="#2-人口不是均勻減少是大規模西部重新洗牌">2. 人口不是均勻減少，是大規模西部重新洗牌</a></li>
+        <li><a href="#3-高齡化的速度比想像中快">3. 高齡化的速度比想像中快</a></li>
+      </ul>
+    </li>
+    <li><a href="#技術筆記">技術筆記</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>臺灣的政府資料開放平臺（<a href="https://data.gov.tw" target="_blank" rel="external nofollow noopener noreferrer">data.gov.tw<i class="fa-solid fa-external-link-alt fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>）上有五萬三千多個資料集，這是我用它做的第一個完整研究：把內政部戶政司的村里級人口資料，整理成 2018–2026 年各縣市人口總量與各鄉鎮市區年齡層結構的年度觀察。</p>
+<p>👉 <strong><a href="/reports/taiwan-population-2018-2026.html">完整互動報告在這裡</a></strong> — 含各縣市增減、六都高齡化曲線，以及可以選縣市、選年度的 368 個鄉鎮市區年齡層探索器。</p>
+<h2 class="heading-element" id="資料與方法"><span>資料與方法</span>
+  <a href="#%e8%b3%87%e6%96%99%e8%88%87%e6%96%b9%e6%b3%95" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h2><ul>
+<li>資料來源：戶政司〈<a href="https://data.gov.tw/dataset/77132" target="_blank" rel="external nofollow noopener noreferrer">村里戶數、單一年齡人口（新增區域代碼）<i class="fa-solid fa-external-link-alt fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>〉，107 年起每月一檔，村里層級、單一年齡（0–100 歲以上）分男女。</li>
+<li>取每年 12 月底時點（2026 年為 6 月底），共 9 個年度時點。</li>
+<li>用 Python（requests + pandas）從全國約 7,700 個村里逐級彙整到 368 個鄉鎮市區、22 個縣市，年齡欄位加總成 0–14、15–24、25–44、45–64、65+ 五組。</li>
+</ul>
+<h2 class="heading-element" id="三個主要發現"><span>三個主要發現</span>
+  <a href="#%e4%b8%89%e5%80%8b%e4%b8%bb%e8%a6%81%e7%99%bc%e7%8f%be" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h2><h3 class="heading-element" id="1-總人口在-2019-年見頂之後回不去了"><span>1. 總人口在 2019 年見頂，之後回不去了</span>
+  <a href="#1-%e7%b8%bd%e4%ba%ba%e5%8f%a3%e5%9c%a8-2019-%e5%b9%b4%e8%a6%8b%e9%a0%82%e4%b9%8b%e5%be%8c%e5%9b%9e%e4%b8%8d%e5%8e%bb%e4%ba%86" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h3><p>2019 年底全國 23,603,121 人是歷史高峰。疫情期間（2021–2022）因除籍效應急跌，2023 年短暫回升後恢復下行，2026 年 6 月只剩 23,243,565 人 — 八年少了 34.5 萬人，相當於一個嘉義縣加一個臺東縣。</p>
+<h3 class="heading-element" id="2-人口不是均勻減少是大規模西部重新洗牌"><span>2. 人口不是均勻減少，是大規模西部重新洗牌</span>
+  <a href="#2-%e4%ba%ba%e5%8f%a3%e4%b8%8d%e6%98%af%e5%9d%87%e5%8b%bb%e6%b8%9b%e5%b0%91%e6%98%af%e5%a4%a7%e8%a6%8f%e6%a8%a1%e8%a5%bf%e9%83%a8%e9%87%8d%e6%96%b0%e6%b4%97%e7%89%8c" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h3><div class="table-wrapper">
+  <table>
+    <thead>
+        <tr>
+            <th>縣市</th>
+            <th style="text-align: right">2018 → 2026</th>
+            <th style="text-align: right">變化率</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>桃園市</td>
+            <td style="text-align: right">+135,746</td>
+            <td style="text-align: right">+6.1%</td>
+        </tr>
+        <tr>
+            <td>新竹縣</td>
+            <td style="text-align: right">+41,250</td>
+            <td style="text-align: right">+7.4%</td>
+        </tr>
+        <tr>
+            <td>臺中市</td>
+            <td style="text-align: right">+63,574</td>
+            <td style="text-align: right">+2.3%</td>
+        </tr>
+        <tr>
+            <td>臺北市</td>
+            <td style="text-align: right"><strong>−242,608</strong></td>
+            <td style="text-align: right"><strong>−9.1%</strong></td>
+        </tr>
+        <tr>
+            <td>嘉義縣</td>
+            <td style="text-align: right">−36,664</td>
+            <td style="text-align: right">−7.2%</td>
+        </tr>
+        <tr>
+            <td>彰化縣</td>
+            <td style="text-align: right">−74,098</td>
+            <td style="text-align: right">−5.8%</td>
+        </tr>
+    </tbody>
+  </table>
+</div><p>臺北市八年流失 24 萬人，幾乎都往桃園跑；竹北市則靠科學園區成為全臺最年輕的城市（65 歲以上僅 10.2%，0–14 歲高達 19.6%）。</p>
+<h3 class="heading-element" id="3-高齡化的速度比想像中快"><span>3. 高齡化的速度比想像中快</span>
+  <a href="#3-%e9%ab%98%e9%bd%a1%e5%8c%96%e7%9a%84%e9%80%9f%e5%ba%a6%e6%af%94%e6%83%b3%e5%83%8f%e4%b8%ad%e5%bf%ab" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h3><p>65 歲以上占比從 2018 年的 14.6% 升到 2026 年的 <strong>20.5%</strong>，臺灣已跨過「超高齡社會」門檻（20%）。而且分布極端：</p>
+<ul>
+<li>最老：新北平溪區 37.2%、臺南龍崎區 36.9% — 淺山聚落幾乎每三人就有一位超過 65 歲。</li>
+<li>最年輕的十個區裡有七個是原住民鄉（蘭嶼、尖石、秀林、卓溪⋯），加上竹北市和臺中南屯區。</li>
+</ul>
+<h2 class="heading-element" id="技術筆記"><span>技術筆記</span>
+  <a href="#%e6%8a%80%e8%a1%93%e7%ad%86%e8%a8%98" class="heading-mark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>
+</h2><p>過程中踩到兩個值得記的坑：</p>
+<ol>
+<li><strong>data.gov.tw 的搜尋 API</strong> 用的是 Elasticsearch 風格的請求體（<code>{&quot;bool&quot;:[{&quot;fulltext&quot;:{&quot;value&quot;:&quot;關鍵字&quot;}}]}</code>），文件上找不到，是攔截網頁請求才發現的。</li>
+<li><strong>Python 3.13+ 的憑證嚴格檢查</strong>（<code>VERIFY_X509_STRICT</code>）會拒絕很多政府機關網站的憑證（缺 Subject Key Identifier），抓政府資料要自訂 TLS adapter 關閉嚴格模式（保留正常驗證）。</li>
+</ol>
+<p>分析程式碼在我的 <code>tw_opendata_research</code> 專案裡：API 客戶端、下載腳本、聚合分析到報告產生，全部可重跑。報告本身是單一自包含 HTML（資料內嵌、無外部依賴），支援深淺色主題。</p>
+<p>下一步想做的：接上 104–106 年的舊資料集把趨勢拉長到十年以上，或疊上出生/死亡/遷徙資料，拆解每個縣市人口變化裡「生不如死」和「人口外移」各占多少。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod"><span title="更新於 2026-07-14 09:00:00">更新於 2026-07-14&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 X" data-sharer="twitter" data-url="https://simon345wu.github.io/posts/taiwan-population-study-2018-2026/" data-title="用開放資料看臺灣人口結構變化 2018–2026" data-hashtags="開放資料,人口統計,資料分析,Python"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://simon345wu.github.io/posts/taiwan-population-study-2018-2026/" data-hashtag="開放資料"><i class="fa-brands fa-facebook-square" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://simon345wu.github.io/posts/taiwan-population-study-2018-2026/" data-title="用開放資料看臺灣人口結構變化 2018–2026"><i class="fa-brands fa-weibo" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags me-1" aria-hidden="true"></i><a href="/tags/%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%99/" class="post-tag" title="標籤 - 開放資料">開放資料</a><a href="/tags/%E4%BA%BA%E5%8F%A3%E7%B5%B1%E8%A8%88/" class="post-tag" title="標籤 - 人口統計">人口統計</a><a href="/tags/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90/" class="post-tag" title="標籤 - 資料分析">資料分析</a><a href="/tags/python/" class="post-tag" title="標籤 - Python">Python</a></section>
+    <section><span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主頁</a></span>
+    </section>
+  </div><div class="post-nav"></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="目錄"><h2 class="toc-title">目錄&nbsp;<i class="toc-icon fa-solid fa-angle-down" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside><dialog id="toc-dialog" aria-labelledby="toc-dialog-title" closedby="any">
+      <button type="button" class="toc-close-btn" aria-label="Close Table of Contents"><i class="fa-solid fa-xmark fa-lg" aria-hidden="true"></i></button>
+      <div class="toc">
+        <h2 class="toc-title" id="toc-dialog-title">目錄</h2>
+        <div class="toc-content" id="toc-content-drawer"><nav >
+  <ul>
+    <li><a href="#資料與方法">資料與方法</a></li>
+    <li><a href="#三個主要發現">三個主要發現</a>
+      <ul>
+        <li><a href="#1-總人口在-2019-年見頂之後回不去了">1. 總人口在 2019 年見頂，之後回不去了</a></li>
+        <li><a href="#2-人口不是均勻減少是大規模西部重新洗牌">2. 人口不是均勻減少，是大規模西部重新洗牌</a></li>
+        <li><a href="#3-高齡化的速度比想像中快">3. 高齡化的速度比想像中快</a></li>
+      </ul>
+    </li>
+    <li><a href="#技術筆記">技術筆記</a></li>
+  </ul>
+</nav></div>
+      </div>
+    </dialog></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.164.0">Hugo</a> 強力驅動 | 主題 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v1.0.0-mqwhji8o">FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2026</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons"><button type="button" class="fixed-button back-to-top animate__faster hidden" aria-label="回到頂部"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button><button type="button" id="toc-drawer-button" class="fixed-button toc-drawer-button hidden" aria-label="目錄" aria-controls="toc-dialog" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button></div><div id="mask"></div><dialog id="search-dialog" class="search-dialog" aria-label="搜尋" closedby="any">
+      <div class="search-modal">
+        <div class="search-modal-header">
+          <span class="search-delimiter"></span>
+          <button type="button" class="search-close-btn" aria-label="Close Search Dialog"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <div class="search-source-footer">
+          <div class="search-shortcuts">
+            <span class="search-shortcut">
+              <kbd><i class="lucide-arrow-up" aria-hidden="true"></i></kbd>
+              <kbd><i class="lucide-arrow-down" aria-hidden="true"></i></kbd>
+              切換
+            </span>
+            <span class="search-shortcut">
+              <kbd><i class="lucide-corner-down-left" aria-hidden="true"></i></kbd>
+              選擇
+            </span>
+            <span class="search-shortcut">
+              <kbd>ESC</kbd>
+              關閉
+            </span>
+          </div><span class="search-engine">搜尋引擎 <a href="https://fusejs.io/" target="_blank" rel="external nofollow noopener noreferrer">Fuse.js</a></span></div>
+      </div>
+    </dialog><noscript>
+    <div class="noscript-warning bg-danger text-white text-base font-bold fixed text-center inset-x-0 bottom-0 w-full z-fixed">該網站在啟用 JavaScript 的情況下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/autocomplete-js/index.production.js" defer></script><script src="/js/lib/fuse.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/js/lib/cookieconsent.min.js" defer></script><script src="/lib/cell-tooltip/cell-tooltip.umd.js" defer></script><script src="/js/config/07089622139d7737a61514ffe0a7a2fe.min.js" defer></script><script src="/js/lib/file-tree.min.js" defer></script><script src="/js/main.min.js" defer></script></body>
+</html>

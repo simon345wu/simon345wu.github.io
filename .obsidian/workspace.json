@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/daily/2026-07-14.md",
+                "file": "content/posts/taiwan-population-study-2018-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-14"
+              "title": "taiwan-population-study-2018-2026"
             }
           }
         ]
@@ -194,8 +194,11 @@
   },
   "active": "833100806680f1d5",
   "lastOpenFiles": [
-    "content/daily/2026-07-13.md",
+    "reports/taiwan-population-2018-2026.html.md",
+    "content/posts/taiwan-population-study-2018-2026.md",
+    "reports",
     "content/daily/2026-07-14.md",
+    "content/daily/2026-07-13.md",
     "content/posts/mycoffeeroastprocess.md",
     "notes/coffee-workflow-integration.md",
     "notes",
@@ -212,7 +215,6 @@
     "content/posts/myroastprocess.md",
     "public/posts/myroastprocess/index.html",
     "public/posts/myroastprocess",
-    "public/js/config/24c29e78a4e6c95c7d3f325d78a85dbd.js",
     "content/posts/_index.md",
     "content/posts/test1.md",
     "public/images/loading.min.svg",
@@ -230,8 +232,6 @@
     "content/posts/my-first-post.md",
     "content/posts/CoffeeBeanRoastProcess.md",
     "content/projects/coffee-partical-analyser.md",
-    "content/daily/2026-07-10.md",
-    "2026-07-10 1.md",
     "未命名.canvas"
   ]
 }
