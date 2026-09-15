@@ -16,3 +16,7 @@ tags = ["ESP32-S3", "C++", "LVGL", "PlatformIO", "Artisan", "BLE"]
     *   **WiFi 設定與診斷**：首次開機開 AP、mDNS(`trident.local`)、`/api/wifi` 儲存認證;WebSerial 分類日誌(`LOG;<類別>;ON|OFF`)。
     *   **環境天氣**：結合 [weather-proxy](/projects/weather-proxy/) 專案,把當下氣溫/氣壓/濕度自動帶進 Artisan 烘焙屬性並顯示在螢幕上。
 *   **硬體**：ESP32-S3 DevKitC-1 N16R8(16MB flash + 8MB PSRAM)、ILI9341 / ST7789 SPI 觸控螢幕(XPT2046 觸控)、MAX31865 + PT100 探針。
+
+## 專案截圖
+
+![Trident 控制器實拍:壓克力外殼內的 ESP32-S3 開發板、觸控螢幕上的 LVGL 烘焙儀表(火力/風力滑桿、溫度數字),上方是連接烘豆機的介面板與配線](/images/trident.jpg)
