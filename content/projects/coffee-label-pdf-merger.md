@@ -1,9 +1,9 @@
 +++
 title = "🖨️ 咖啡標籤 PDF 合併／A4 3×3 拼版工具"
 date = 2026-07-21T09:00:00+08:00
-lastmod = 2026-07-21T09:00:00+08:00
+lastmod = 2026-09-18T06:36:00+08:00
 categories = ["網頁與軟體開發"]
-tags = ["Python", "PySide6", "Qt", "PDF", "PyInstaller"]
+tags = ["Python", "PySide6", "Qt", "PDF", "PyInstaller", "ReportLab"]
 +++
 
 *   **專案連結**：[Github simon345wu / CoffeeLabel](https://github.com/simon345wu/CoffeeLabel)
@@ -44,6 +44,46 @@ tags = ["Python", "PySide6", "Qt", "PDF", "PyInstaller"]
 - **即時預覽的節流**：目標清單一有變動就重新拼版有點浪費，加了 400ms 的 debounce，連續拖曳時只在停下來後算一次。
 - **打包的坑**：Qt 的 `QtPdf` 是較冷門的模組，PyInstaller 有時不會自動帶它的 DLL，打包後預覽會空白或閃退。所以打包後我用無視窗(offscreen)模式實際啟動 exe 驗證——程式在建立 `QPdfDocument` 前若缺 DLL 就會立刻崩潰，存活即代表預覽模組確實打包成功。
 
+## 2026-09 最新改版：單頁標籤排版重構與視覺體驗優化 (Coffee Label Redesign)
+
+在完成 3×3 拼版工具後，進一步針對 **單頁標籤 (ReportLab 產生器)** 進行了版面美學與資訊層次的重大升級：
+
+### 1. QR Code 輕量化與沉穩置中 (Lightweight QR Code)
+- **簡化資訊動線**：取消原本左側的 Feedback QR Code，僅保留連至熟豆履歷網頁的 Detail QR Code 並實施**水平置中**。
+- **實體尺寸精緻化**：從 `20mm × 20mm` 縮小至 **`15mm × 15mm`**，去除厚重黑色外框矩形，釋放標籤底部的呼吸留白空間。
+- **Level L 點陣優化**：改用 Level L (7% 容錯率) 生成二維碼，點陣密度大幅降低、方塊更大更清晰，手機實體掃描反應速度更為順暢。
+
+### 2. Agtron 烘焙度色彩漸變刻度條 (Visual Roast Degree Scale Bar)
+- **直覺化漸層設計**：擺脫過往純數字 `Agtron: 65 / 80` 的抽象感，設計了由深至淺 5 個刻度（**`深` ➡️ `中深` ➡️ `中` ➡️ `中淺` ➡️ `淺`**），並佐以 4 段咖啡色系漸層橫線（濃縮黑褐 `#36190B` ➡️ 淺金咖啡褐 `#C8A27A`）。
+- **豆表與豆芯雙標記**：
+  - **`●` 實心黑褐點**：代表 Whole Bean 豆表數值 (如 `W 65`)。
+  - **`○` 空心圓點**：代表 Ground Coffee 豆芯粉數值 (如 `G 80`)。
+- **自動對齊與排版防重疊**：數值標籤直接對齊於標點正下方；當豆表與豆芯數值極接近時，系統自動啟用微調演算防止文字重疊。
+- **缺失值優雅降級**：若無 Agtron 量測數據，自動關閉標點與數字標示，僅保留乾淨通透的 5 刻度色彩橫線。
+
+### 3. 版面層次架構圖
+```
+┌──────────────────────────────────────────┐
+│  [Logo]              熟豆名稱            │
+│                   (哥倫比亞 山茶花)       │
+│                                          │
+│                 2025-10-18               │
+│             Colombia 。 Washed           │
+│                                          │
+│    深      中深       中      中淺      淺 │  <-- 5 刻度文字與漸層橫線
+│    ├───●─────┼────────┼────○───┼────────┤  
+│       W 65                G 80           │  <-- 數值對齊標點正下方
+│                                          │
+│  Tasting Notes: 乾香為檸檬皮、佛手柑...  │
+│                                          │
+│                   Detail:                │  
+│                   [QR Code]              │  <-- 15mm 輕量無框 (置中)
+│                                          │
+│          A good coffee for the day       │  
+│          --Simon Signature Coffee        │  
+└──────────────────────────────────────────┘
+```
+
 ## 技術棧
 
-Python · PySide6 (Qt 6) · pikepdf(合併)· pypdf(拼版)· PyInstaller(打包)
+Python · ReportLab · PySide6 (Qt 6) · pikepdf(合併) · pypdf(拼版) · PyInstaller(打包)
